@@ -4,7 +4,7 @@
 #define MAX_NUMBER 100
 #define BUFFER_SIZE 20
 
-char * names[MAX_NUMBER];
+char *names[MAX_NUMBER];
 char *numbers[MAX_NUMBER];
 int n = 0;
 
@@ -22,7 +22,7 @@ int main() {
 	while (1) {
 		printf("$ ");
 		scanf_s("%s", user_input, BUFFER_SIZE);
-		if (strcmp(user_input, "load")==0) {
+		if (strcmp(user_input, "read")==0) {
 			load();
 		}
 		else if (strcmp(user_input, "add") == 0) {
@@ -60,8 +60,8 @@ void add() {
 		numbers[i + 1] = numbers[i];
 		i--;
 	}
-	names[n] = strdup(buf1);
-	numbers[n] = strdup(buf2);
+	names[i+1] = strdup(buf1);
+	numbers[i+1] = strdup(buf2);
 	n++;
 
 	printf("%s was added successfully. \n", buf1);
