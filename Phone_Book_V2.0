@@ -4,7 +4,7 @@
 #define MAX_NUMBER 100
 #define BUFFER_SIZE 20
 
-char *names[MAX_NUMBER];
+char * names[MAX_NUMBER];
 char *numbers[MAX_NUMBER];
 int n = 0;
 
